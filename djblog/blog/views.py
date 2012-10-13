@@ -4,7 +4,7 @@ from django.http import Http404
 from django.template import RequestContext
 from django.shortcuts import render_to_response
 
-import utils
+import djblog.utils
 from models import Post
 
 def show_post(request, pid):

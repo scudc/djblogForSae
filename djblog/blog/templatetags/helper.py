@@ -2,7 +2,7 @@
 # coding: utf-8
 # yc@2011/08/29
 
-from blog.models import Post, Tag, Link, Page
+from djblog.blog.models import Post, Tag, Link, Page
 from django import template
 
 register = template.Library()

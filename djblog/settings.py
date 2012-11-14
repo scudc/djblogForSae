@@ -129,7 +129,7 @@ TIME_ZONE = 'Asia/Shanghai'
 LANGUAGE_CODE = 'zh-cn'
 
 # 邮箱（报错时发送）
-EMAIL = 'iyanchuan@gmail.com'
+EMAIL = 'scudongchao@gmail.com'
 
 # 是否本地环境
 LOCAL_DEBUG = not environ.get("SERVER_SOFTWARE", "")
@@ -150,10 +150,10 @@ else :
 	# 数据库信息
 	DATABASES = {
     		'default': {
-        	'ENGINE': 'django.db.backends.mysql', # mysql 可以改成 'postgresql_psycopg2', 'postgresql', 'sqlite3' or 'oracle'.
+        	'ENGINE': 'django.db.backends.sqlite3', # mysql 可以改成 'postgresql_psycopg2', 'postgresql', 'sqlite3' or 'oracle'.
         	'NAME': 'djblog',                      # 数据库名
-        	'USER': 'root',                      # sqlite3 不使用此配置
-        	'PASSWORD': 'root',                  # sqlite3 不使用此配置
+        	'USER': '',                      # sqlite3 不使用此配置
+        	'PASSWORD': '',                  # sqlite3 不使用此配置
         	'HOST': '',
         	'PORT': '',
     		}
@@ -166,13 +166,13 @@ TEMPLATE_DIRS = (
 	os.path.join(os.path.dirname(__file__), 'templates/' + THEME),
 )
 # 站点名称
-SITE_TITLE = 'ichuan.net'
+SITE_TITLE = '达摩流浪者'
 # 副标题
-SITE_SUBTITLE = u'All about yc'
+SITE_SUBTITLE = u'我是一名程序员而且我坚信我十年后还是一名程序员。'
 # 作者
-SITE_AUTHOR = 'yc'
+SITE_AUTHOR = 'hobo'
 # 描述
-SITE_DESC = 'yc\'s personal site'
+SITE_DESC = 'hobo\'s personal site'
 
 # 分页大小
 PER_PAGE = 5
@@ -186,7 +186,7 @@ GA_ID = 'UA-15372596-1'
 CSE_ID = '017823656936221718810:8oexw_fkbz0'
 
 # disqus 评论 id
-DISQUS_SHORTNAME = 'ycsblog'
+DISQUS_SHORTNAME = 'scudc'
 
 
 
